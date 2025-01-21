@@ -26,7 +26,8 @@ class RomanNumeralTest {
     @Test
     @DisplayName("Roman MMXXV returns 2025")
     void romanMmxxvReturns2025() {
-
+        int result = romanNumeral.convert("MMXXV");
+        assertThat(result).isEqualTo(2025);
     }
 
     @Test
