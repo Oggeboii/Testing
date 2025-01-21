@@ -33,7 +33,15 @@ class RomanNumeralTest {
     @Test
     @DisplayName("Blank string input returns 0")
     void blankStringInputReturns0() {
+        int result = romanNumeral.convert("");
+        assertThat(result).isEqualTo(0);
+    }
 
+    @Test
+    @DisplayName("Test all possible characters")
+    void testAllPossibleCharacters() {
+        int result = romanNumeral.convert("MDCLXVI");
+        assertThat(result).isEqualTo(1666);
     }
   
 }
