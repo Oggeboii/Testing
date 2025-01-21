@@ -19,7 +19,8 @@ class RomanNumeralTest {
     @Test
     @DisplayName("Roman IV returns 4")
     void romanIvReturns4() {
-
+        int result = romanNumeral.convert("IV");
+        assertThat(result).isEqualTo(4);
     }
 
     @Test
